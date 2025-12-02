@@ -29,6 +29,27 @@
         "comment": "Great product! I've noticed my skin is brighter and more even-toned. The only downside is I wish the bottle was bigger.",
         "date": "3 weeks ago",
         "verified": true
+      },
+      {
+        "name": "Rachel T.",
+        "rating": 5,
+        "comment": "This serum is a game-changer! My complexion has improved so much. It's worth the investment for sure.",
+        "date": "5 days ago",
+        "verified": true
+      },
+      {
+        "name": "Michelle B.",
+        "rating": 5,
+        "comment": "I've been using this for a month and my skin texture has improved dramatically. It's lightweight and doesn't break me out.",
+        "date": "1 week ago",
+        "verified": true
+      },
+      {
+        "name": "Jennifer W.",
+        "rating": 4,
+        "comment": "Really nice serum! It gives a nice glow and my skin feels plump. Will definitely repurchase.",
+        "date": "4 days ago",
+        "verified": true
       }
     ]
   },
@@ -54,6 +75,27 @@
         "rating": 4,
         "comment": "Love the color and how it feels on my lips. Very natural looking and hydrating.",
         "date": "2 weeks ago",
+        "verified": true
+      },
+      {
+        "name": "Sophie K.",
+        "rating": 5,
+        "comment": "This is my new favorite lip product! The color is perfect and it keeps my lips so soft. Love it!",
+        "date": "3 days ago",
+        "verified": true
+      },
+      {
+        "name": "Lily P.",
+        "rating": 5,
+        "comment": "Beautiful tint and incredibly moisturizing. I use it multiple times a day. The color lasts nicely too!",
+        "date": "6 days ago",
+        "verified": true
+      },
+      {
+        "name": "Grace M.",
+        "rating": 4,
+        "comment": "Nice natural color and very hydrating. Perfect for everyday wear. Wish it came in more shades though.",
+        "date": "1 week ago",
         "verified": true
       }
     ]
@@ -88,6 +130,27 @@
         "comment": "Really nice cream, very hydrating. My skin feels plump and moisturized all day. Would buy again!",
         "date": "2 weeks ago",
         "verified": true
+      },
+      {
+        "name": "Charlotte D.",
+        "rating": 5,
+        "comment": "This cream is perfect! It's lightweight but super hydrating. My skin feels like velvet. Highly recommend!",
+        "date": "5 days ago",
+        "verified": true
+      },
+      {
+        "name": "Amelia F.",
+        "rating": 4,
+        "comment": "Great moisturizer! It's non-greasy and my skin loves it. Perfect for daily use.",
+        "date": "1 week ago",
+        "verified": true
+      },
+      {
+        "name": "Harper L.",
+        "rating": 5,
+        "comment": "Love this cream! My skin is so soft and glowing. It's become an essential part of my routine.",
+        "date": "4 days ago",
+        "verified": true
       }
     ]
   },
@@ -113,6 +176,27 @@
         "rating": 4,
         "comment": "Great cleanser! It's gentle on my sensitive skin and removes makeup really well. The texture is lovely too.",
         "date": "1 week ago",
+        "verified": true
+      },
+      {
+        "name": "Evelyn S.",
+        "rating": 5,
+        "comment": "Best cleansing balm I've used! It melts makeup away effortlessly and leaves my skin feeling so soft. Highly recommend!",
+        "date": "3 days ago",
+        "verified": true
+      },
+      {
+        "name": "Abigail K.",
+        "rating": 5,
+        "comment": "This balm is incredible! It removes everything without stripping my skin. My face feels clean and hydrated. Perfect!",
+        "date": "1 week ago",
+        "verified": true
+      },
+      {
+        "name": "Emily R.",
+        "rating": 4,
+        "comment": "Really nice cleansing balm. It's gentle and effective. My skin feels great after using it.",
+        "date": "6 days ago",
         "verified": true
       }
     ]
@@ -147,6 +231,27 @@
         "comment": "Really nice toner. It's very gentle and doesn't irritate my skin. I notice my skin is more balanced since using it.",
         "date": "2 weeks ago",
         "verified": true
+      },
+      {
+        "name": "Mia H.",
+        "rating": 5,
+        "comment": "Love this toner! The rosewater scent is lovely and it makes my skin feel so refreshed. It's now a staple in my routine.",
+        "date": "3 days ago",
+        "verified": true
+      },
+      {
+        "name": "Lily N.",
+        "rating": 4,
+        "comment": "Great toner! It's hydrating and helps balance my skin. The scent is pleasant and it's very gentle.",
+        "date": "1 week ago",
+        "verified": true
+      },
+      {
+        "name": "Grace P.",
+        "rating": 5,
+        "comment": "This toner is amazing! My skin looks clearer and feels so balanced. I can't imagine my routine without it now.",
+        "date": "5 days ago",
+        "verified": true
       }
     ]
   },
@@ -172,6 +277,27 @@
         "rating": 4,
         "comment": "Really nice eye cream. It's lightweight and doesn't cause any irritation. I think it's helping with my fine lines.",
         "date": "1 week ago",
+        "verified": true
+      },
+      {
+        "name": "Chloe T.",
+        "rating": 5,
+        "comment": "Best eye cream I've tried! My under-eye area looks so much brighter and less puffy. Highly recommend this!",
+        "date": "4 days ago",
+        "verified": true
+      },
+      {
+        "name": "Victoria W.",
+        "rating": 5,
+        "comment": "This eye cream works wonders! My dark circles have definitely improved and the skin around my eyes feels so smooth.",
+        "date": "1 week ago",
+        "verified": true
+      },
+      {
+        "name": "Samantha K.",
+        "rating": 4,
+        "comment": "Nice eye cream. It's gentle and hydrating. I've noticed some improvement in my fine lines. Good product!",
+        "date": "3 days ago",
         "verified": true
       }
     ]
@@ -206,6 +332,27 @@
         "comment": "Great mask! I notice my skin is brighter and more even-toned. It's gentle and doesn't irritate my sensitive skin.",
         "date": "2 weeks ago",
         "verified": true
+      },
+      {
+        "name": "Aria M.",
+        "rating": 5,
+        "comment": "This mask is incredible! My skin looks glowing after every use. It's become a weekly treat for my skin. Highly recommend!",
+        "date": "5 days ago",
+        "verified": true
+      },
+      {
+        "name": "Layla B.",
+        "rating": 4,
+        "comment": "Really nice mask! It brightens my complexion and leaves my skin feeling smooth. Perfect for weekly pampering.",
+        "date": "1 week ago",
+        "verified": true
+      },
+      {
+        "name": "Zoe C.",
+        "rating": 5,
+        "comment": "My favorite mask! It gives such a beautiful glow and my skin feels amazing afterward. Worth every penny!",
+        "date": "4 days ago",
+        "verified": true
       }
     ]
   },
@@ -231,6 +378,27 @@
         "rating": 5,
         "comment": "Perfect for my dry skin! This oil has transformed my complexion. My skin feels so nourished and looks glowing.",
         "date": "2 weeks ago",
+        "verified": true
+      },
+      {
+        "name": "Hannah Z.",
+        "rating": 5,
+        "comment": "Amazing face oil! It's so luxurious and my skin absolutely loves it. I wake up with glowing, hydrated skin. Worth it!",
+        "date": "4 days ago",
+        "verified": true
+      },
+      {
+        "name": "Avery L.",
+        "rating": 4,
+        "comment": "Great oil! It's lightweight and absorbs well. My dry skin feels much more nourished. Really nice product.",
+        "date": "1 week ago",
+        "verified": true
+      },
+      {
+        "name": "Scarlett R.",
+        "rating": 5,
+        "comment": "This oil is fantastic! My skin looks so radiant and feels incredibly soft. It's perfect for my mature skin. Love it!",
+        "date": "6 days ago",
         "verified": true
       }
     ]
@@ -258,6 +426,27 @@
         "comment": "This scrub is perfect! It's not too harsh and leaves my skin feeling so smooth. I use it twice a week and love the results.",
         "date": "1 week ago",
         "verified": true
+      },
+      {
+        "name": "Penelope A.",
+        "rating": 5,
+        "comment": "Love this scrub! It's gentle but effective. My skin feels so smooth and looks brighter. Perfect for sensitive skin!",
+        "date": "3 days ago",
+        "verified": true
+      },
+      {
+        "name": "Riley B.",
+        "rating": 4,
+        "comment": "Great exfoliator! It's not too abrasive and my skin feels polished afterward. Nice gentle scrub for regular use.",
+        "date": "1 week ago",
+        "verified": true
+      },
+      {
+        "name": "Eleanor C.",
+        "rating": 5,
+        "comment": "This scrub is amazing! My skin feels so smooth and looks radiant. I use it weekly and it's become a must-have.",
+        "date": "4 days ago",
+        "verified": true
       }
     ]
   },
@@ -283,6 +472,34 @@
         "rating": 4,
         "comment": "Great mist! It's very hydrating and feels so nice on the skin. I use it throughout the day to refresh my makeup.",
         "date": "1 week ago",
+        "verified": true
+      },
+      {
+        "name": "Nora D.",
+        "rating": 5,
+        "comment": "This mist is perfect! I use it multiple times a day. It's so refreshing and keeps my skin hydrated. Love it!",
+        "date": "3 days ago",
+        "verified": true
+      },
+      {
+        "name": "Elena F.",
+        "rating": 5,
+        "comment": "Amazing mist! It's become essential in my routine. My skin feels so refreshed and hydrated. Highly recommend!",
+        "date": "1 week ago",
+        "verified": true
+      },
+      {
+        "name": "Ivy G.",
+        "rating": 4,
+        "comment": "Nice hydrating mist! It's perfect for on-the-go hydration. The mist is fine and feels great on the skin.",
+        "date": "5 days ago",
+        "verified": true
+      },
+      {
+        "name": "Maya H.",
+        "rating": 5,
+        "comment": "This mist is fantastic! I use it to set my makeup and throughout the day. My skin loves it. Must-have product!",
+        "date": "4 days ago",
         "verified": true
       }
     ]
