@@ -74,17 +74,18 @@ const Home = () => {
               return (
                 <div
                   key={product.id}
-                  className="group cursor-pointer transition-transform duration-300 hover:scale-105"
+                  className="group cursor-pointer"
                 >
                   <Link to={`/product/${product.id}`}>
-                    <div className="bg-lunaria-beige rounded-sm overflow-hidden mb-4">
+                    <div className="bg-lunaria-beige rounded-sm overflow-hidden mb-4 relative">
                       <img
                         src={product.image}
                         alt={product.name}
-                        className="w-full h-80 object-cover"
+                        className="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110"
                       />
+                      <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-5 transition-opacity duration-300"></div>
                     </div>
-                    <h3 className="text-xl font-display font-medium text-lunaria-charcoal mb-2">
+                    <h3 className="text-xl font-display font-medium text-lunaria-charcoal mb-2 transition-colors duration-300 group-hover:text-lunaria-charcoal/80">
                       {product.name}
                     </h3>
                     {averageRating && (
@@ -96,7 +97,7 @@ const Home = () => {
                       </div>
                     )}
                     <p className="text-gray-600 mb-3 text-sm">{product.description}</p>
-                    <p className="text-lg font-semibold text-lunaria-charcoal">
+                    <p className="text-lg font-semibold text-lunaria-charcoal transition-colors duration-300 group-hover:text-lunaria-charcoal/90">
                       ${product.price}
                     </p>
                   </Link>

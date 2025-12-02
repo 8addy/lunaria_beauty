@@ -79,20 +79,21 @@ const Products = () => {
           {products.map((product) => (
             <div
               key={product.id}
-              className="bg-white rounded-sm overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300"
+              className="group bg-white rounded-sm overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
             >
               <Link to={`/product/${product.id}`}>
-                <div className="bg-lunaria-beige">
+                <div className="bg-lunaria-beige overflow-hidden relative">
                   <img
                     src={product.image}
                     alt={product.name}
-                    className="w-full h-80 object-cover"
+                    className="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110"
                   />
+                  <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-5 transition-opacity duration-300"></div>
                 </div>
               </Link>
               <div className="p-6">
                 <Link to={`/product/${product.id}`}>
-                  <h3 className="text-2xl font-display font-medium text-lunaria-charcoal mb-2 hover:opacity-70">
+                  <h3 className="text-2xl font-display font-medium text-lunaria-charcoal mb-2 transition-colors duration-300 group-hover:text-lunaria-charcoal/80">
                     {product.name}
                   </h3>
                 </Link>
@@ -104,13 +105,13 @@ const Products = () => {
                     </span>
                   </div>
                 )}
-                <p className="text-gray-600 mb-4">{product.description}</p>
+                <p className="text-gray-600 mb-4 line-clamp-2">{product.description}</p>
                 <div className="mb-4">
                   <p className="text-2xl font-semibold text-lunaria-charcoal">
                     ${product.price}
                   </p>
                 </div>
-                <div className="flex gap-2">
+                <div className="flex gap-2 opacity-100 group-hover:opacity-100 transition-opacity duration-300">
                   <button
                     onClick={(e) => {
                       e.preventDefault()
@@ -120,13 +121,13 @@ const Products = () => {
                         setAddedItems({ ...addedItems, [product.id]: false })
                       }, 2000)
                     }}
-                    className="btn-primary flex-1 text-sm px-4 py-2"
+                    className="btn-primary flex-1 text-sm px-4 py-2 transform transition-all duration-300 hover:scale-105"
                   >
                     {addedItems[product.id] ? 'Added!' : 'Add to Cart'}
                   </button>
                   <Link
                     to={`/product/${product.id}`}
-                    className="btn-secondary text-sm px-4 py-2"
+                    className="btn-secondary text-sm px-4 py-2 transform transition-all duration-300 hover:scale-105"
                   >
                     Details
                   </Link>
