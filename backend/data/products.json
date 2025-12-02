@@ -1,0 +1,290 @@
+[
+  {
+    "id": 1,
+    "name": "Luminizing Serum",
+    "price": 39,
+    "description": "A hydrating serum that leaves your skin glowing naturally.",
+    "fullDescription": "Our Luminizing Serum is crafted with pure botanical extracts and hyaluronic acid to deeply hydrate and illuminate your skin. This lightweight formula absorbs quickly, leaving behind a natural, dewy glow that enhances your skin's natural radiance. Perfect for all skin types, use morning and evening for best results.",
+    "image": "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=800&h=800&fit=crop",
+    "ingredients": "Hyaluronic Acid, Botanical Extracts, Vitamin C, Aloe Vera",
+    "size": "30ml",
+    "reviews": [
+      {
+        "name": "Sarah M.",
+        "rating": 5,
+        "comment": "Absolutely love this serum! My skin has never looked better. It gives me such a natural glow and feels so lightweight. Worth every penny!",
+        "date": "2 weeks ago",
+        "verified": true
+      },
+      {
+        "name": "Emma L.",
+        "rating": 5,
+        "comment": "This is now a staple in my skincare routine. My skin feels so hydrated and looks radiant. Highly recommend!",
+        "date": "1 month ago",
+        "verified": true
+      },
+      {
+        "name": "Jessica K.",
+        "rating": 4,
+        "comment": "Great product! I've noticed my skin is brighter and more even-toned. The only downside is I wish the bottle was bigger.",
+        "date": "3 weeks ago",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Bloom Lip Tint",
+    "price": 22,
+    "description": "A soft blush of color with nourishing botanical oils.",
+    "fullDescription": "Bloom Lip Tint offers a delicate wash of color that enhances your natural lip tone while providing deep nourishment. Infused with botanical oils and shea butter, this tinted balm keeps your lips soft, supple, and beautifully colored throughout the day. Available in three natural shades that adapt to your unique lip color.",
+    "image": "https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=800&h=800&fit=crop",
+    "ingredients": "Shea Butter, Botanical Oils, Natural Pigments, Beeswax",
+    "size": "4.5g",
+    "reviews": [
+      {
+        "name": "Olivia R.",
+        "rating": 5,
+        "comment": "Perfect natural color! It's so moisturizing and the color is beautiful. I wear it every day now.",
+        "date": "1 week ago",
+        "verified": true
+      },
+      {
+        "name": "Mia T.",
+        "rating": 4,
+        "comment": "Love the color and how it feels on my lips. Very natural looking and hydrating.",
+        "date": "2 weeks ago",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Velvet Skin Cream",
+    "price": 34,
+    "description": "A lightweight moisturizer for smooth, radiant skin.",
+    "fullDescription": "Experience the luxurious feel of our Velvet Skin Cream, a lightweight yet deeply hydrating moisturizer that leaves your skin feeling silky smooth. Formulated with ceramides and natural emollients, this cream creates a protective barrier while maintaining your skin's natural moisture balance. Suitable for daily use, morning and night.",
+    "image": "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=800&h=800&fit=crop",
+    "ingredients": "Ceramides, Natural Emollients, Jojoba Oil, Vitamin E",
+    "size": "50ml",
+    "reviews": [
+      {
+        "name": "Sophia C.",
+        "rating": 5,
+        "comment": "This cream is amazing! My skin feels so soft and smooth. It's not greasy at all and absorbs quickly. Perfect for my combination skin.",
+        "date": "3 days ago",
+        "verified": true
+      },
+      {
+        "name": "Isabella W.",
+        "rating": 5,
+        "comment": "Best moisturizer I've tried! My skin looks and feels incredible. The texture is perfect - not too heavy, not too light.",
+        "date": "1 week ago",
+        "verified": true
+      },
+      {
+        "name": "Ava H.",
+        "rating": 4,
+        "comment": "Really nice cream, very hydrating. My skin feels plump and moisturized all day. Would buy again!",
+        "date": "2 weeks ago",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Botanical Cleansing Balm",
+    "price": 28,
+    "description": "A gentle, nourishing cleanser that melts away makeup and impurities.",
+    "fullDescription": "Our Botanical Cleansing Balm transforms from a rich balm to a silky oil upon contact with your skin, effortlessly removing makeup, sunscreen, and daily impurities. Enriched with chamomile and calendula extracts, it soothes and calms while cleansing, leaving your skin soft, clean, and never stripped. Perfect for all skin types, especially sensitive skin.",
+    "image": "https://images.unsplash.com/photo-1571875257727-256c39da42af?w=800&h=800&fit=crop",
+    "ingredients": "Chamomile Extract, Calendula Oil, Jojoba Oil, Vitamin E",
+    "size": "100ml",
+    "reviews": [
+      {
+        "name": "Charlotte B.",
+        "rating": 5,
+        "comment": "This balm removes all my makeup so easily, even waterproof mascara! My skin feels clean but never dry. Love it!",
+        "date": "5 days ago",
+        "verified": true
+      },
+      {
+        "name": "Amelia D.",
+        "rating": 4,
+        "comment": "Great cleanser! It's gentle on my sensitive skin and removes makeup really well. The texture is lovely too.",
+        "date": "1 week ago",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Rosewater Toner",
+    "price": 24,
+    "description": "A refreshing, hydrating toner that balances and prepares your skin.",
+    "fullDescription": "Infused with pure rosewater and botanical extracts, our Rosewater Toner provides instant hydration while balancing your skin's pH levels. This gentle formula soothes irritation, minimizes pores, and prepares your skin for optimal product absorption. Lightweight and refreshing, it's the perfect addition to your daily skincare routine.",
+    "image": "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=800&h=800&fit=crop",
+    "ingredients": "Pure Rosewater, Witch Hazel, Aloe Vera, Glycerin",
+    "size": "150ml",
+    "reviews": [
+      {
+        "name": "Harper F.",
+        "rating": 5,
+        "comment": "This toner is so refreshing! I use it morning and night. My skin feels balanced and looks clearer. The rosewater scent is divine!",
+        "date": "4 days ago",
+        "verified": true
+      },
+      {
+        "name": "Evelyn G.",
+        "rating": 5,
+        "comment": "Perfect toner! It's gentle, hydrating, and smells amazing. My pores look smaller and my skin feels so refreshed.",
+        "date": "1 week ago",
+        "verified": true
+      },
+      {
+        "name": "Abigail J.",
+        "rating": 4,
+        "comment": "Really nice toner. It's very gentle and doesn't irritate my skin. I notice my skin is more balanced since using it.",
+        "date": "2 weeks ago",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Lunar Eye Cream",
+    "price": 42,
+    "description": "A luxurious eye cream that reduces fine lines and dark circles.",
+    "fullDescription": "Wake up to brighter, more youthful-looking eyes with our Lunar Eye Cream. This rich, yet lightweight formula targets fine lines, dark circles, and puffiness with a blend of peptides, caffeine, and botanical extracts. The delicate eye area receives gentle care, leaving you looking refreshed and radiant every morning.",
+    "image": "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=800&h=800&fit=crop",
+    "ingredients": "Peptides, Caffeine, Cucumber Extract, Hyaluronic Acid",
+    "size": "15ml",
+    "reviews": [
+      {
+        "name": "Emily N.",
+        "rating": 5,
+        "comment": "This eye cream is fantastic! I've noticed my dark circles are much lighter and my under-eye area looks smoother. Worth the investment!",
+        "date": "6 days ago",
+        "verified": true
+      },
+      {
+        "name": "Madison P.",
+        "rating": 4,
+        "comment": "Really nice eye cream. It's lightweight and doesn't cause any irritation. I think it's helping with my fine lines.",
+        "date": "1 week ago",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Glow Face Mask",
+    "price": 32,
+    "description": "A brightening mask that reveals luminous, glowing skin.",
+    "fullDescription": "Treat your skin to a weekly ritual with our Glow Face Mask. This creamy, botanical-rich formula gently exfoliates while deeply hydrating, revealing brighter, more even-toned skin. Infused with natural fruit enzymes and botanical extracts, it leaves your complexion looking refreshed, radiant, and beautifully smooth.",
+    "image": "https://images.unsplash.com/photo-1556229010-6c3f2c9ca5f8?w=800&h=800&fit=crop",
+    "ingredients": "Papaya Enzymes, Turmeric Extract, Honey, Kaolin Clay",
+    "size": "50ml",
+    "reviews": [
+      {
+        "name": "Chloe Q.",
+        "rating": 5,
+        "comment": "This mask is amazing! My skin looks so much brighter after using it. I use it once a week and my complexion has never looked better!",
+        "date": "3 days ago",
+        "verified": true
+      },
+      {
+        "name": "Victoria S.",
+        "rating": 5,
+        "comment": "Love this mask! It leaves my skin feeling so smooth and looking radiant. The texture is perfect and it doesn't dry out my skin.",
+        "date": "1 week ago",
+        "verified": true
+      },
+      {
+        "name": "Grace U.",
+        "rating": 4,
+        "comment": "Great mask! I notice my skin is brighter and more even-toned. It's gentle and doesn't irritate my sensitive skin.",
+        "date": "2 weeks ago",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Nourishing Face Oil",
+    "price": 45,
+    "description": "A luxurious blend of botanical oils for radiant, supple skin.",
+    "fullDescription": "Indulge your skin with our Nourishing Face Oil, a carefully curated blend of precious botanical oils. This lightweight yet deeply nourishing formula absorbs quickly, delivering essential fatty acids and antioxidants to restore your skin's natural glow. Perfect for dry and mature skin, or as an overnight treatment for all skin types.",
+    "image": "https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?w=800&h=800&fit=crop",
+    "ingredients": "Argan Oil, Rosehip Oil, Jojoba Oil, Vitamin E",
+    "size": "30ml",
+    "reviews": [
+      {
+        "name": "Lily V.",
+        "rating": 5,
+        "comment": "This face oil is incredible! My skin drinks it up and looks so radiant. It's not greasy at all and absorbs beautifully. My new favorite!",
+        "date": "1 week ago",
+        "verified": true
+      },
+      {
+        "name": "Natalie X.",
+        "rating": 5,
+        "comment": "Perfect for my dry skin! This oil has transformed my complexion. My skin feels so nourished and looks glowing.",
+        "date": "2 weeks ago",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Gentle Exfoliating Scrub",
+    "price": 26,
+    "description": "A gentle, natural exfoliant that smooths and brightens your complexion.",
+    "fullDescription": "Reveal smoother, brighter skin with our Gentle Exfoliating Scrub. Formulated with fine bamboo powder and natural fruit extracts, this scrub gently removes dead skin cells without irritation. The creamy base enriched with botanical oils ensures your skin feels soft, smooth, and beautifully polished after each use.",
+    "image": "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=800&h=800&fit=crop",
+    "ingredients": "Bamboo Powder, Apricot Kernel Oil, Sugar Cane Extract, Aloe Vera",
+    "size": "75ml",
+    "reviews": [
+      {
+        "name": "Zoe Y.",
+        "rating": 4,
+        "comment": "Nice scrub! It's gentle enough for my sensitive skin but still effective. My skin feels smooth and looks brighter.",
+        "date": "5 days ago",
+        "verified": true
+      },
+      {
+        "name": "Hannah Z.",
+        "rating": 5,
+        "comment": "This scrub is perfect! It's not too harsh and leaves my skin feeling so smooth. I use it twice a week and love the results.",
+        "date": "1 week ago",
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Hydrating Mist",
+    "price": 18,
+    "description": "A refreshing facial mist that instantly hydrates and revitalizes your skin.",
+    "fullDescription": "Keep your skin refreshed and hydrated throughout the day with our Hydrating Mist. This lightweight, fine-mist formula delivers instant moisture and a burst of botanical goodness. Perfect for setting makeup, refreshing your skin, or providing a quick hydration boost whenever you need it. The gentle formula is suitable for all skin types.",
+    "image": "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=800&h=800&fit=crop",
+    "ingredients": "Hyaluronic Acid, Cucumber Extract, Green Tea, Aloe Vera",
+    "size": "100ml",
+    "reviews": [
+      {
+        "name": "Aria A.",
+        "rating": 5,
+        "comment": "I carry this mist everywhere! It's so refreshing and gives my skin an instant boost. Perfect for setting makeup too!",
+        "date": "2 days ago",
+        "verified": true
+      },
+      {
+        "name": "Layla B.",
+        "rating": 4,
+        "comment": "Great mist! It's very hydrating and feels so nice on the skin. I use it throughout the day to refresh my makeup.",
+        "date": "1 week ago",
+        "verified": true
+      }
+    ]
+  }
+]
