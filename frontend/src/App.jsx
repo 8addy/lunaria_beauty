@@ -10,9 +10,12 @@ import Contact from './pages/Contact'
 import Cart from './pages/Cart'
 
 function App() {
+  // Use basename from Vite config (automatically set based on base path)
+  const basename = import.meta.env.BASE_URL
+  
   return (
     <CartProvider>
-      <Router>
+      <Router basename={basename}>
         <div className="min-h-screen flex flex-col">
           <Navbar />
           <main className="flex-grow">
