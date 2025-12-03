@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { useEffect, useState } from 'react'
-import axios from 'axios'
+import apiClient from '../config/axios'
 import ProductCarousel from '../components/ProductCarousel'
 
 const Home = () => {
@@ -16,7 +16,7 @@ const Home = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get('/api/products')
+        const response = await apiClient.get('/api/products')
         setFeaturedProducts(response.data.slice(0, 3))
       } catch (error) {
         console.error('Error fetching products:', error)

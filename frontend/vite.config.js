@@ -6,12 +6,8 @@ export default defineConfig({
   plugins: [react()],
   server: {
     port: 3000,
-    proxy: {
-      '/api': {
-        target: 'http://localhost:5001',
-        changeOrigin: true,
-      }
-    }
+    // Proxy is removed - using deployed backend URL directly
+    // To use local backend, set VITE_API_BASE_URL=http://localhost:5001 in .env file
   }
 })
 

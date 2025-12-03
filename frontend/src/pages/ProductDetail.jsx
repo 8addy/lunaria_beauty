@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useParams, Link, useNavigate } from 'react-router-dom'
-import axios from 'axios'
+import apiClient from '../config/axios'
 import { useCart } from '../context/CartContext'
 import Reviews from '../components/Reviews'
 
@@ -15,7 +15,7 @@ const ProductDetail = () => {
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        const response = await axios.get(`/api/products/${id}`)
+        const response = await apiClient.get(`/api/products/${id}`)
         setProduct(response.data)
         setLoading(false)
       } catch (error) {

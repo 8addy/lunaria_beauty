@@ -73,6 +73,8 @@ npm start
 
 The backend server will run on `http://localhost:5001`
 
+**Note:** The backend is also deployed at `https://lunaria-beauty.onrender.com`. 
+
 #### 2. Frontend Setup
 
 Open a new terminal window:
@@ -84,6 +86,23 @@ npm run dev
 ```
 
 The frontend will run on `http://localhost:3000`
+
+##### API Configuration
+
+The frontend automatically detects the environment:
+
+- **Local Development**: Uses `http://localhost:5001` (your local backend)
+- **Production Build**: Automatically uses `https://lunaria-beauty.onrender.com` (deployed backend)
+
+You can override this by setting the `VITE_API_BASE_URL` environment variable:
+
+```bash
+# Create .env file in frontend directory (optional - only if you want to override)
+cd frontend
+echo "VITE_API_BASE_URL=http://localhost:5001" > .env
+```
+
+For GitHub Pages deployment, the production build will automatically use the deployed backend URL.
 
 ### Development Mode
 
