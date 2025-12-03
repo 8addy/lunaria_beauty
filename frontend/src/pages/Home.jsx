@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom'
-import { useEffect, useState } from 'react'
-import apiClient from '../config/axios'
+import { useState } from 'react'
+import { getFeaturedProducts } from '../data/products'
 import ProductCarousel from '../components/ProductCarousel'
 
 const Home = () => {
-  const [featuredProducts, setFeaturedProducts] = useState([])
+  const [featuredProducts] = useState(getFeaturedProducts(3))
 
   // Elegant carousel images - models with beauty products
   const carouselImages = [
@@ -12,18 +12,6 @@ const Home = () => {
     'https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=1200&h=800&fit=crop',
     'https://images.unsplash.com/photo-1512496015851-a90fb38ba796?w=1200&h=800&fit=crop'
   ]
-
-  useEffect(() => {
-    const fetchProducts = async () => {
-      try {
-        const response = await apiClient.get('/api/products')
-        setFeaturedProducts(response.data.slice(0, 3))
-      } catch (error) {
-        console.error('Error fetching products:', error)
-      }
-    }
-    fetchProducts()
-  }, [])
 
   const StarRating = ({ rating }) => {
     return (

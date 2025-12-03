@@ -1,12 +1,11 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import apiClient from '../config/axios'
+import { getAllProducts } from '../data/products'
 import { useCart } from '../context/CartContext'
 
 const Products = () => {
   const { addToCart } = useCart()
-  const [products, setProducts] = useState([])
-  const [loading, setLoading] = useState(true)
+  const [products] = useState(getAllProducts())
   const [addedItems, setAddedItems] = useState({})
 
   const getAverageRating = (reviews) => {
@@ -40,27 +39,6 @@ const Products = () => {
     )
   }
 
-  useEffect(() => {
-    const fetchProducts = async () => {
-      try {
-        const response = await apiClient.get('/api/products')
-        setProducts(response.data)
-        setLoading(false)
-      } catch (error) {
-        console.error('Error fetching products:', error)
-        setLoading(false)
-      }
-    }
-    fetchProducts()
-  }, [])
-
-  if (loading) {
-    return (
-      <div className="min-h-screen flex items-center justify-center">
-        <p className="text-gray-600">Loading products...</p>
-      </div>
-    )
-  }
 
   return (
     <div className="py-20">

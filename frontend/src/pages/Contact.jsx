@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import apiClient from '../config/axios'
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -17,23 +16,23 @@ const Contact = () => {
     })
   }
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault()
     setLoading(true)
     setStatus(null)
 
-    try {
-      const response = await apiClient.post('/api/contact', formData)
-      setStatus({ type: 'success', message: response.data.message })
-      setFormData({ name: '', email: '', message: '' })
-    } catch (error) {
-      setStatus({
-        type: 'error',
-        message: error.response?.data?.error || 'Something went wrong. Please try again.',
+    // Simulate form submission (client-side only for static site)
+    setTimeout(() => {
+      // Log form data (in a real static site, you might use a service like Formspree)
+      console.log('Contact Form Submission:', formData)
+      
+      setStatus({ 
+        type: 'success', 
+        message: 'Thank you for contacting us! We will get back to you soon.' 
       })
-    } finally {
+      setFormData({ name: '', email: '', message: '' })
       setLoading(false)
-    }
+    }, 500)
   }
 
   return (

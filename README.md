@@ -1,13 +1,15 @@
-# Lunaria Beauty - E-commerce Template
+# Lunaria Beauty - Static E-commerce Template
 
-A fully functional, elegant e-commerce template for a fictional cosmetics brand built with React, Node.js, and Express.
+A fully functional, elegant static e-commerce template for a fictional cosmetics brand built with React and Vite.
 
 ## 🎨 Features
 
 - **Modern Design**: Clean, luxury aesthetic with soft neutral colors
 - **Responsive Layout**: Mobile-first design that works on all devices
-- **Product Catalog**: Browse and view detailed product information
-- **Contact Form**: Functional contact form with backend integration
+- **Product Catalog**: Browse and view detailed product information with reviews
+- **Shopping Cart**: Full cart functionality with localStorage persistence
+- **Contact Form**: Client-side contact form
+- **Static Site**: Fully static - no backend required, perfect for GitHub Pages deployment
 - **Fast Performance**: Built with Vite for optimal development and build performance
 
 ## 🛠️ Tech Stack
@@ -17,33 +19,31 @@ A fully functional, elegant e-commerce template for a fictional cosmetics brand 
 - Vite
 - React Router
 - TailwindCSS
-- Axios
-
-### Backend
-- Node.js
-- Express
-- CORS
+- Local data (no API calls needed)
 
 ## 📁 Project Structure
 
 ```
 ecom/
-├── backend/
-│   ├── data/
-│   │   └── products.json      # Mock product data
-│   ├── server.js              # Express server
-│   └── package.json
 ├── frontend/
 │   ├── src/
 │   │   ├── components/        # Reusable components
 │   │   │   ├── Navbar.jsx
-│   │   │   └── Footer.jsx
+│   │   │   ├── Footer.jsx
+│   │   │   ├── ProductCarousel.jsx
+│   │   │   └── Reviews.jsx
+│   │   ├── context/           # React Context
+│   │   │   └── CartContext.jsx
+│   │   ├── data/              # Product data
+│   │   │   ├── products.json
+│   │   │   └── products.js
 │   │   ├── pages/             # Page components
 │   │   │   ├── Home.jsx
 │   │   │   ├── Products.jsx
 │   │   │   ├── ProductDetail.jsx
 │   │   │   ├── About.jsx
-│   │   │   └── Contact.jsx
+│   │   │   ├── Contact.jsx
+│   │   │   └── Cart.jsx
 │   │   ├── App.jsx            # Main app component
 │   │   ├── main.jsx           # Entry point
 │   │   └── index.css          # Global styles
@@ -63,21 +63,7 @@ ecom/
 
 ### Installation & Running
 
-#### 1. Backend Setup
-
-```bash
-cd backend
-npm install
-npm start
-```
-
-The backend server will run on `http://localhost:5001`
-
-**Note:** The backend is also deployed at `https://lunaria-beauty.onrender.com`. 
-
-#### 2. Frontend Setup
-
-Open a new terminal window:
+#### Frontend Setup
 
 ```bash
 cd frontend
@@ -87,85 +73,43 @@ npm run dev
 
 The frontend will run on `http://localhost:3000`
 
-##### API Configuration
-
-The frontend automatically detects the environment:
-
-- **Local Development**: Uses `http://localhost:5001` (your local backend)
-- **Production Build**: Automatically uses `https://lunaria-beauty.onrender.com` (deployed backend)
-
-You can override this by setting the `VITE_API_BASE_URL` environment variable:
-
-```bash
-# Create .env file in frontend directory (optional - only if you want to override)
-cd frontend
-echo "VITE_API_BASE_URL=http://localhost:5001" > .env
-```
-
-For GitHub Pages deployment, the production build will automatically use the deployed backend URL.
-
-### Development Mode
-
-For backend development with auto-reload, use:
-
-```bash
-cd backend
-npm run dev
-```
-
-(Requires nodemon to be installed globally or as a dev dependency)
-
 ## 📄 Available Pages
 
-- **Home** (`/`) - Hero section and featured products
-- **Products** (`/products`) - Full product catalog
-- **Product Detail** (`/product/:id`) - Individual product details
+- **Home** (`/`) - Hero carousel, featured products, testimonials, and more
+- **Products** (`/products`) - Full product catalog with ratings
+- **Product Detail** (`/product/:id`) - Individual product details with reviews
 - **About** (`/about`) - Brand story and philosophy
 - **Contact** (`/contact`) - Contact form
+- **Cart** (`/cart`) - Shopping cart with checkout summary
 
-## 🔌 API Endpoints
+## 🚢 Building for Production
 
-### GET `/api/products`
-Returns all products
+### Build
 
-**Response:**
-```json
-[
-  {
-    "id": 1,
-    "name": "Luminizing Serum",
-    "price": 39,
-    "description": "...",
-    "fullDescription": "...",
-    "image": "...",
-    "ingredients": "...",
-    "size": "30ml"
-  }
-]
+```bash
+cd frontend
+npm run build
 ```
 
-### GET `/api/products/:id`
-Returns a single product by ID
+The build output will be in the `dist/` folder.
 
-### POST `/api/contact`
-Submit contact form
+### Deploy to GitHub Pages
 
-**Request Body:**
-```json
-{
-  "name": "John Doe",
-  "email": "john@example.com",
-  "message": "Hello..."
-}
+The project is configured for GitHub Pages deployment:
+
+```bash
+cd frontend
+npm run deploy
 ```
 
-**Response:**
-```json
-{
-  "success": true,
-  "message": "Thank you for contacting us!"
-}
-```
+This will:
+1. Build the project with the correct base path
+2. Create a 404.html file for client-side routing
+3. Deploy to the `gh-pages` branch
+
+Your site will be available at: `https://[your-username].github.io/lunaria_beauty/`
+
+**Note:** Make sure to update the `base` path in `vite.config.js` to match your repository name if different.
 
 ## 🎨 Design System
 
@@ -179,31 +123,47 @@ Submit contact form
 - **Display Font**: Playfair Display (headings)
 - **Body Font**: Inter (body text)
 
-## 🚢 Building for Production
+## 📝 Features Details
 
-### Frontend
-```bash
-cd frontend
-npm run build
-```
+### Shopping Cart
+- Add/remove items
+- Update quantities
+- Persistent cart (localStorage)
+- Cart icon with item count in navbar
 
-The build output will be in the `dist/` folder.
+### Product Reviews
+- Star ratings
+- Customer reviews with verified badges
+- Average rating display
+- Review count on product cards
 
-### Backend
-The backend is ready for production. You may want to:
-- Add environment variables for configuration
-- Set up proper logging
-- Add database integration
-- Implement authentication if needed
+### Static Data
+- All product data is stored locally in `src/data/products.json`
+- No API calls required
+- Perfect for static hosting
 
 ## 🔮 Future Enhancements
 
-1. **User Authentication**: Add user accounts and order history
-2. **Payment Integration**: Integrate Stripe or PayPal
-3. **Database**: Replace JSON files with a proper database (MongoDB, PostgreSQL)
-4. **Image Upload**: Add functionality to upload product images
-5. **Search & Filters**: Add product search and filtering capabilities
-6. **Reviews**: Allow customers to leave product reviews
-7. **Email Service**: Integrate email service for contact form submissions
-8. **SEO**: Add meta tags, Open Graph, and structured data
-9. **Analytics**: Add Google Analytics or similar tracking
+Here are some suggested improvements for production:
+
+1. **Payment Integration**: Integrate Stripe or PayPal for checkout
+2. **Form Service**: Use Formspree or similar for contact form submissions
+3. **Search & Filters**: Add product search and filtering capabilities
+4. **User Accounts**: Add user authentication and order history
+5. **Database**: If needed, integrate with a headless CMS or database
+6. **SEO**: Add meta tags, Open Graph, and structured data
+7. **Analytics**: Add Google Analytics or similar tracking
+
+## 📝 Notes
+
+- Product images are currently using Unsplash placeholder URLs. Replace these with actual product images in production.
+- The contact form is client-side only. For production, integrate with a form service like Formspree.
+- The cart is stored in localStorage. For production, consider syncing with a backend or user account.
+
+## 📄 License
+
+This is a template project. Feel free to use and modify as needed.
+
+---
+
+Built with ❤️ for Lunaria Beauty

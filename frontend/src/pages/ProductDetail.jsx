@@ -1,30 +1,15 @@
-import { useState, useEffect } from 'react'
-import { useParams, Link, useNavigate } from 'react-router-dom'
-import apiClient from '../config/axios'
+import { useState } from 'react'
+import { useParams, Link } from 'react-router-dom'
+import { getProductById } from '../data/products'
 import { useCart } from '../context/CartContext'
 import Reviews from '../components/Reviews'
 
 const ProductDetail = () => {
   const { id } = useParams()
-  const navigate = useNavigate()
   const { addToCart } = useCart()
-  const [product, setProduct] = useState(null)
-  const [loading, setLoading] = useState(true)
   const [addedToCart, setAddedToCart] = useState(false)
-
-  useEffect(() => {
-    const fetchProduct = async () => {
-      try {
-        const response = await apiClient.get(`/api/products/${id}`)
-        setProduct(response.data)
-        setLoading(false)
-      } catch (error) {
-        console.error('Error fetching product:', error)
-        setLoading(false)
-      }
-    }
-    fetchProduct()
-  }, [id])
+  
+  const product = getProductById(id)
 
   const handleAddToCart = () => {
     if (product) {
@@ -32,14 +17,6 @@ const ProductDetail = () => {
       setAddedToCart(true)
       setTimeout(() => setAddedToCart(false), 3000)
     }
-  }
-
-  if (loading) {
-    return (
-      <div className="min-h-screen flex items-center justify-center">
-        <p className="text-gray-600">Loading product...</p>
-      </div>
-    )
   }
 
   if (!product) {
